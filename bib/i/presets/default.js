@@ -14,13 +14,13 @@ Bibi.Preset = {
 "website-name-in-menu"       : "", // "" or name of your website appears in setting-menu as a link. (Requires "website-href")
 "website-href"               : "", // "" or URL of your website to be used for the link in setting-menu. (Requires "website-name-in-menu")
 
-"remove-bibi-website-link"   : false, // true or false (if true, the link to BiB/i Website is not to be added in setting-menu)
+"remove-bibi-website-link"   : true, // true or false (if true, the link to BiB/i Website is not to be added in setting-menu)
 
 // -------------------------------------------------------------------------------------------------
 
 "bookshelf"                  : "../bookshelf/", // relative path from bib/i/index.html (if the origin is included in "trustworthy-origins", URI begins with "http://" or "https://" for COR-allowed server is OK).
 
-"reader-view-mode"           : "paged", // "paged" or "vertical" or "horizontal" ("paged" is for flipping, "vertical" and "horizontal" are for scrolling)
+"reader-view-mode"           : "horizontal", // "paged" or "vertical" or "horizontal" ("paged" is for flipping, "vertical" and "horizontal" are for scrolling)
 "fix-reader-view-mode"       : "no", // "yes" or "no" or "desktop" or "mobile"
 "single-page-always"         : "no", // "yes" or "no" or "desktop" or "mobile"
 
@@ -30,7 +30,7 @@ Bibi.Preset = {
 "use-nombre"                 : "yes", // "yes" or "no" or "desktop" or "mobile"
 "use-slider"                 : "yes", // "yes" or "no" or "desktop" or "mobile"
 "use-arrows"                 : "yes", // "yes" or "no" or "desktop" or "mobile"
-"use-keys"                   : "desktop", // "yes" or "no" or "desktop" or "mobile"
+"use-keys"                   : "no", // "yes" or "no" or "desktop" or "mobile"
 "use-swipe"                  : "yes", // "yes" or "no" or "desktop" or "mobile"
 "use-cookie"                 : "yes", // "yes" or "no" or "desktop" or "mobile"
 
@@ -66,7 +66,7 @@ Bibi.Preset = {
     { "name": "Unzipper", "src": "extensions/unzipper/unzipper.js" },
     { "name": "Analytics", "src" : "extensions/analytics/analytics.js", "tracking-id": "" }, // "tracking-id": Your own Google Analytics tracking id, as "UA-********-*"
     { "name": "FontSize", "src": "extensions/fontsize/fontsize.js", "base": "auto", "scale-per-step": 1.25 }, // "base": "auto" or pixel-number (if you want to change the default font-size based on the size used most frequently in each HTML)
-    { "name": "Share", "src" : "extensions/share/share.js" },
+    // { "name": "Share", "src" : "extensions/share/share.js" },
     //{ "name": "EPUBCFI", "src": "extensions/epubcfi/epubcfi.js" },
     //{ "name": "OverReflow", "src": "extensions/overreflow/overreflow.js" },
     //{ "name": "JaTEx", "src": "extensions/jatex/jatex.js" },
@@ -77,7 +77,7 @@ Bibi.Preset = {
 
 // =================================================================================================
 
-"trustworthy-origins": []
+"trustworthy-origins": ["localhost:3000"]
 
 // =================================================================================================
 

@@ -3426,6 +3426,7 @@ I.createSlider = function() {
     E.add("bibi:commands:close-slider",  function(Opt) { I.Slider.close(Opt); });
     E.add("bibi:commands:toggle-slider", function(Opt) { I.Slider.toggle(Opt); });
     E.add("bibi:tapped", function(Eve) {
+      return;
         if(!L.Opened) return;
         var BibiEvent = O.getBibiEvent(Eve);
         if(BibiEvent.Target.tagName) {

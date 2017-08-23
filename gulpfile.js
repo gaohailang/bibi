@@ -213,7 +213,7 @@ S.makeScript = function(Param) {
     return gulp.src(Param.src)
         .pipe($.plumber({ errorHandler: $.notify.onError('<%= error.message %>') }))
         .pipe($.concat(Param.dist))
-        .pipe($.uglify({ preserveComments: 'some' }))
+        // .pipe($.uglify({ preserveComments: 'some' }))
         .pipe($.replace('0.000.0', S.getVersion()))
         .pipe($.replace('198106091234', S.getBuildNumber()))
         .pipe($.replace(/(.)(\/\*!)/g, '$1\n$2'))
